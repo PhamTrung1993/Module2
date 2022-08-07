@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb6b8283-cce2-4f6c-9916-3cdba9535f39" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ThucHanh/HelloWorld/src/demo/codegym/Hello_world.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ThucHanh/HelloWorld/src/demo/codegym/Hello_world.java" afterDir="false" />
+    <list default="true" id="b840c8df-2f11-4628-a93c-e88d4c804e5b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../BaiTap/introductionToJava/Currency-conversion/out/production/Currency-conversion/codegym/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BaiTap/introductionToJava/Currency-conversion/out/production/Currency-conversion/codegym/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BaiTap/introductionToJava/Prime-20/out/production/Prime-20/codegym/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BaiTap/introductionToJava/Prime-20/out/production/Prime-20/codegym/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HelloWorld/src/demo/codegym/Hello_world.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HelloWorld/src/demo/codegym/Hello_world.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,12 +15,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2CsItqECCZ5jC9Gb41R11ECpdLw" />
+  <component name="ProjectId" id="2CvE1iSsK0nFRBi5QtRmUSygkeV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -30,24 +28,21 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Code_gym/Module2/BaiTap",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bb6b8283-cce2-4f6c-9916-3cdba9535f39" name="Changes" comment="" />
-      <created>1659585082430</created>
+      <changelist id="b840c8df-2f11-4628-a93c-e88d4c804e5b" name="Changes" comment="" />
+      <created>1659674447703</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1659585082430</updated>
-      <workItem from="1659585083608" duration="239000" />
-      <workItem from="1659692273882" duration="213000" />
+      <updated>1659674447703</updated>
+      <workItem from="1659674448905" duration="109000" />
     </task>
     <servers />
   </component>

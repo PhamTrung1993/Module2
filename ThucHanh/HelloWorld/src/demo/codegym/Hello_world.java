@@ -1,2 +1,7 @@
-package demo.codegym;public class Hello_world {
+package demo.codegym;
+
+public class Hello_world {
+    public static void main(String[] args) {
+        System.out.println("Hello World!!!");
+    }
 }
