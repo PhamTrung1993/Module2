@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class NextDayCalculator {
 
+    private static int lasmonth;
+
     public static boolean leapYear(int year){
         return ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0);
     }
@@ -40,32 +42,38 @@ public class NextDayCalculator {
         int nextyear = year;
         int nextmonth = month;
         int nextday = day;
+        int lastmonth = 12;
+        int February = 2;
+        int first = 1;
+
         String concatenation = "/";
 
         if (year > 0 && month < 13 && day > 0 && day <= lastDaysInTheMonth(month,year)) {
             nextday = day + 1;
-            if (month == 7 && day == 31) {
-                nextday = 1;
+            if (month != lastmonth && day == lastDaysInTheMonth(month,year)) {
+                nextday = first;
                 nextmonth = month + 1;
 
             }
-            else if (month == 12 && day == lastDaysInTheMonth(month, year)) {
-                nextday = 1;
+            else if (month == lastmonth && day == lastDaysInTheMonth(month, year)) {
+                nextday = first;
                 nextyear = nextyear +1;
-                nextmonth = 1;
+                nextmonth = first;
 
             }
-            else if (month == 2){
-                if (leapYear(year)) {
-                    if (day == 29) {
-                        nextday = 1;
-                        nextmonth = month +1;
+            else {
+                if (month == February){
+                    if (leapYear(year)) {
+                        if (day == lastDaysInTheMonth(month, year)) {
+                            nextday = first;
+                            nextmonth = month +1;
+                        }
                     }
-                }
-                else {
-                    if (day == 28) {
-                        nextday = 1;
-                        nextmonth = month + 1;
+                    else {
+                        if (day == lastDaysInTheMonth(month, year)) {
+                            nextday = first;
+                            nextmonth = month + 1;
+                        }
                     }
                 }
             }

@@ -29,12 +29,12 @@ class NextDayCalculatorTest {
     }
 
     @Test
-    @DisplayName("case 30/07/2022")
+    @DisplayName("case 31/07/2022")
     void test30072022() {
             int year = 2022;
             int month = 7;
-            int day = 30;
-            String expected = "The Next day is: 31/7/2022";
+            int day = 31;
+            String expected = "The Next day is: 1/8/2022";
 
             String result = NextDayCalculator.getNextDay(year,month,day);
         assertEquals(expected, result);
@@ -57,6 +57,17 @@ class NextDayCalculatorTest {
         int month = 2;
         int day = 28;
         String expected = "The Next day is: 1/3/2022";
+
+        String result = NextDayCalculator.getNextDay(year,month,day);
+        assertEquals(expected, result);
+    }
+    @Test
+    @DisplayName("case 31/12/2022")
+    void test31122022() {
+        int year = 2022;
+        int month = 12;
+        int day = 31;
+        String expected = "The Next day is: 1/1/2023";
 
         String result = NextDayCalculator.getNextDay(year,month,day);
         assertEquals(expected, result);
