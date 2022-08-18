@@ -1,10 +1,17 @@
-package codegym;
+package model;
 
 import java.time.LocalDate;
 
 public class CrispyFlour extends Material implements Discount{
 
     private int quantity;
+
+    public CrispyFlour() {
+    }
+
+    public CrispyFlour(int quantity) {
+        this.quantity = quantity;
+    }
 
     public CrispyFlour(String id, String name, LocalDate manufacturingDate, int cost, int quantity) {
         super(id, name, manufacturingDate, cost);
@@ -31,7 +38,7 @@ public class CrispyFlour extends Material implements Discount{
 
     @Override
     public double getRealMoney() {
-        return 50000;
+        return 0;
     }
 
     @Override

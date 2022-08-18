@@ -1,12 +1,16 @@
-package codegym;
+package model;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public abstract class Material {
     private String id;
     private String name;
     private LocalDate manufacturingDate;
     private int cost;
+
+    public Material() {
+    }
 
     public Material(String id, String name, LocalDate manufacturingDate, int cost) {
         this.id = id;

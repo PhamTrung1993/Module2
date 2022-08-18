@@ -1,14 +1,22 @@
-package codegym;
+package model;
 
 import java.time.LocalDate;
 
 public class Meat extends Material implements Discount{
     private double weight;
+    public Meat(){
+
+    }
+    public Meat(double weight) {
+        this.weight = weight;
+    }
 
     public Meat(String id, String name, LocalDate manufacturingDate, int cost, double weight) {
         super(id, name, manufacturingDate, cost);
         this.weight = weight;
     }
+
+
 
     public double getWeight() {
         return weight;
@@ -20,7 +28,7 @@ public class Meat extends Material implements Discount{
 
     @Override
     public double getRealMoney() {
-        return 110000;
+        return 0;
     }
 
     @Override
