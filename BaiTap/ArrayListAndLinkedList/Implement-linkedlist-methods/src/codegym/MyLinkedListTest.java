@@ -22,10 +22,7 @@ public class MyLinkedListTest {
         ListTest.removeLast();
         ListTest.printList();
 
-        MyLinkedList clone = ListTest.clone();
-        clone.printList();
-
+        System.out.println(ListTest.indexOf(8));
+        System.out.println(ListTest.isContain(9));
     }
-
-
 }

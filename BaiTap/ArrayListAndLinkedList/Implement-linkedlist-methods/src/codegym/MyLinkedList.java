@@ -67,20 +67,16 @@ public class MyLinkedList {
             return moveToIndex(index);
         }
 
-        public void remove(int index) {
+        public boolean remove(int index) {
             if (index < 0 || index >= numNodes)
-                System.out.println(index + "error");
+               return false;
             else if (index == 0)  removeFirst();
             else if (index == numNodes - 1)  removeLast();
             else {
-                Node previous = head;
-
-                for (int i = 1; i < index; i++) {
-                    previous = previous.next;
-                }
-
-                Node current = previous.next;
-                previous.next = current.next;
+                Node temp = moveToIndex(index - 1);
+                Node current = temp.next;
+                temp.next = current.next;
+                current.next = null;
                 numNodes--;
             }
         }

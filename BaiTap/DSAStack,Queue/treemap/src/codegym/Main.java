@@ -9,10 +9,28 @@ public class Main {
         String string = "hello body hello bady";
         string = string.replaceAll(",","");
         String[] array = string.split(" ");
-        String key = "";
-        Integer value;
+
         TreeMap<String,Integer>map = new TreeMap<String,Integer>();
+        extracted(array, map);
+        show(map);
+    }
+
+    private static void show(TreeMap<String, Integer> map) {
+        String key;
+        Set set = map.keySet();
+        Iterator i = set.iterator();
+
+        while (i.hasNext()) {
+            key = (String)i.next();
+            System.out.println("Word ' " + key +" ' appears " + map.get(key) + " times");
+        }
+    }
+
+    private static void extracted(String[] array, TreeMap<String, Integer> map) {
+        String key;
+        Integer value;
         for (int i = 0; i < array.length; i++) {
+
             key = array[i];
             if (map.containsKey(key)) {
                 value = map.get(key);
@@ -22,13 +40,6 @@ public class Main {
             else {
                 map.put(key,1);
             }
-        }
-        Set set = map.keySet();
-        Iterator i = set.iterator();
-
-        while (i.hasNext()) {
-            key = (String)i.next();
-            System.out.println("Word ' " + key +" ' appears " + map.get(key) + " times");
         }
     }
 }
