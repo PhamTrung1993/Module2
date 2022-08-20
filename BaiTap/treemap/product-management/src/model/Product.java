@@ -3,10 +3,10 @@ package model;
 public class Product {
     int Id;
     String name;
-    double price;
-    String origin = "null";
+    int price;
+    String origin;
 
-    public Product(int id, String name, double price, String origin) {
+    public Product(int id, String name, int price, String origin) {
         this.Id = id;
         this.name = name;
         this.price = price;
@@ -29,11 +29,11 @@ public class Product {
         this.name = name;
     }
 
-    public double getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 

@@ -2,16 +2,13 @@ package cotroller;
 
 import model.Product;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.TreeMap;
+import java.util.*;
 
 public class ProductManager implements ProductManagerInteface {
     public static List<Product> products;
 
     public ProductManager() {
-        products = new ArrayList<>();
+         products = new ArrayList<>();
 
         this.add(new Product(1,"Bánh bao",15000,"Hà Nội"));
         this.add(new Product(2,"Bánh mì trứng",15000,"Hà Nội"));
@@ -63,4 +60,13 @@ public class ProductManager implements ProductManagerInteface {
             System.out.println(products.get(i));
         }
     }
+    public static void comparatorPrice() {
+        PriceComporator priceComporator = new PriceComporator();
+        Collections.sort(products, priceComporator);
+        System.out.println("So sánh theo giá");
+        for (Product pr: products) {
+            System.out.println(pr.toString());
+        }
+    }
+
 }

@@ -1,21 +1,21 @@
 package views;
 
+import cotroller.PriceComporator;
 import cotroller.ProductManager;
 import model.Product;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Test {
     public static List<Product> newList = new ArrayList<>();
     public static void main(String[] args) {
+
         ProductManager newList = new ProductManager();
         newList.show();
         Product product1 = getProduct();
         System.out.println(newList.add(product1));
         newList.show();
+        ProductManager.comparatorPrice();
 
     }
 
@@ -33,4 +33,5 @@ public class Test {
         Product product = new Product(id, name,price, origin);
         return product;
     }
+
 }
