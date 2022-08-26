@@ -4,23 +4,22 @@ package model;
 import java.io.Serializable;
 
 public class Product implements Serializable {
-    private static final long serialVersionUID = -7898230272152884703L;
 
     private int id;
     private String name;
     private String manufacturer;
     private int price;
-    private String infomation;
+    private String information;
 
     public Product() {
     }
 
-    public Product(int id, String name, String manufacturer, int price, String infomation) {
+    public Product(int id, String name, String manufacturer, int price, String information) {
         this.id = id;
         this.name = name;
         this.manufacturer = manufacturer;
         this.price = price;
-        this.infomation = infomation;
+        this.information = information;
     }
 
     public int getId() {
@@ -55,12 +54,12 @@ public class Product implements Serializable {
         this.price = price;
     }
 
-    public String getInfomation() {
-        return infomation;
+    public String getInformation() {
+        return information;
     }
 
-    public void setInfomation(String infomation) {
-        this.infomation = infomation;
+    public void setInformation(String information) {
+        this.information = information;
     }
 
 }

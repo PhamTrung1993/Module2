@@ -36,12 +36,12 @@ public class ProductManager {
         model.setPrice(price);
     }
     public String getInformation() {
-        return model.getInfomation();
+        return model.getInformation();
     }
     public void setInformation(String information) {
-        model.setInfomation(information);
+        model.setInformation(information);
     }
     public void updateProductView() {
-        view.displayProductDetail(model.getId(), model.getName(), model.getManufacturer(),model.getPrice(), model.getInfomation());
+        view.displayProductDetail(model.getId(), model.getName(), model.getManufacturer(),model.getPrice(), model.getInformation());
     }
 }

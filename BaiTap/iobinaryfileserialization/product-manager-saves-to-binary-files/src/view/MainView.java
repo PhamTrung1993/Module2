@@ -54,7 +54,7 @@ public class MainView {
         while (iterator.hasNext()) {
             Product holder = iterator.next();
             System.out.printf("%-5s%-20s%-20s%-10s%-30s\n",holder.getId(),holder.getName(),holder.getManufacturer(),
-                                holder.getPrice(),holder.getInfomation());
+                                holder.getPrice(),holder.getInformation());
         }
         System.out.println("..................................................................");
     }
