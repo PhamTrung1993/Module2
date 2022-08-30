@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
 public class CrawlSongExample {
     public static void main(String[] args) {
         try {
-            URL url = new URL("https://www.nhaccuatui.com/bai-hat/bai-hat-moi-nhat.html");
+            URL url = new URL("https://www.nhaccuatui.com/bai-hat/nhac-tre-moi.html");
             // open the stream and put it into BufferedReader
             Scanner scanner = new Scanner(new InputStreamReader(url.openStream()));
             scanner.useDelimiter("\\Z");
@@ -22,7 +22,7 @@ public class CrawlSongExample {
             // remove all new line
             content = content.replaceAll("\\n+", "");
             // regex
-            Pattern pattern = Pattern.compile("name_song\" > (.*?)</a>");
+            Pattern pattern = Pattern.compile("name_song\">(.*?)</a>");
             Matcher matcher = pattern.matcher(content);
             while (matcher.find()){
                 System.out.println(matcher.group(1));
