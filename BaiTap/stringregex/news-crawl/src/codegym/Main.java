@@ -18,11 +18,11 @@ public class Main {
             scanner.close();
             content = content.replaceAll("\\n+","");
 
-            Pattern pattern = Pattern.compile("(<item><title>)([^<]+)");
+            Pattern pattern = Pattern.compile("<h3 class='article-title'> <a href='(.*?)'>(.*?)</a>");
             Matcher m = pattern.matcher(content);
 
             while (m.find()) {
-                System.out.println("New is: " + m.group(2));
+                System.out.println("New is: " + m.group(1));
 
             }
 
