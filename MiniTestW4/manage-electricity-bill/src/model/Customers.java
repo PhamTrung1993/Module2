@@ -7,10 +7,12 @@ public class Customers implements Serializable {
     private int number;
     private String electricMeterId;
 
+    private Bill bill;
+
     public Customers() {
     }
 
-    public Customers(String name, int number, String electricMeterId) {
+    public Customers(String name, int number, String electricMeterId, Bill bill) {
         this.name = name;
         this.number = number;
         this.electricMeterId = electricMeterId;
@@ -38,6 +40,14 @@ public class Customers implements Serializable {
 
     public void setElectricMeterId(String electricMeterId) {
         this.electricMeterId = electricMeterId;
+    }
+
+    public Bill getBill() {
+        return bill;
+    }
+
+    public void setBill(Bill bill) {
+        this.bill = bill;
     }
 
     @Override

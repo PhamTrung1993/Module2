@@ -8,10 +8,6 @@ import java.util.List;
 public class Customercontroller {
     private String name;
     public static List<Customers> customersList = new ArrayList<>();
-    static {
-        customersList.add(new Customers("Trung",12,"EVN1111"));
-        customersList.add(new Customers("Huy",15,"EVN1113"));
-    }
 
     public void addNewCustomer(Customers customers) {
         customersList.add(customers);

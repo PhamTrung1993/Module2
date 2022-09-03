@@ -2,18 +2,17 @@ package model;
 
 import java.io.Serializable;
 
-public class Bill implements Serializable {
+public class Bill implements Serializable,Calculated {
     private long oldIndex;
     private long newIndex;
-    private Customers customers;
 
     public Bill() {
     }
 
-    public Bill(long oldIndex, long newIndex, Customers customers) {
+    public Bill(long oldIndex, long newIndex) {
         this.oldIndex = oldIndex;
         this.newIndex = newIndex;
-        this.customers = customers;
+
     }
 
     public long getOldIndex() {
@@ -32,12 +31,11 @@ public class Bill implements Serializable {
         this.newIndex = newIndex;
     }
 
-    public Customers getCustomers() {
-        return customers;
-    }
 
-    public void setCustomers(Customers customers) {
-        this.customers = customers;
+    public long payMoney() {
+        long index = newIndex - oldIndex;
+        long money = index * index;
+        return money;
     }
 
     @Override
@@ -45,7 +43,6 @@ public class Bill implements Serializable {
         return "Bill{" +
                 "oldIndex=" + oldIndex +
                 ", newIndex=" + newIndex +
-                ", customers=" + customers +
                 '}';
     }
 }
